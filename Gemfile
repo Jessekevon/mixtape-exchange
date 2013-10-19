@@ -14,6 +14,8 @@ end
 
 gem 'devise'
 
+gem 'acts_as_follower'
+
 # Rating system
 gem 'commontator'
 
