@@ -15,7 +15,7 @@
       %td= post.title
       %td= post.content
       %td= post.post_img
-      %td= post.embed_url
+      %td= post.embed_url.html_safe
       %td= link_to 'Show', post
       %td= link_to 'Edit', edit_post_path(post)
       %td= link_to 'Destroy', post, :method => :delete, :data => { :confirm => 'Are you sure?' }
