@@ -1,5 +1,19 @@
 source 'https://rubygems.org'
 
+# Haml
+
+gem 'haml-rails'
+gem 'haml'
+
+gem 'pry'
+gem 'hirb'
+
+group :test do
+  gem 'rspec-rails'
+end
+
+gem 'devise'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
