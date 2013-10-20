@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+
+# Foundation
+gem 'zurb-foundation'
+
 # Haml
 gem 'haml-rails'
 gem 'haml'
