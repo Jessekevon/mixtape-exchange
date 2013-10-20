@@ -1,14 +1,17 @@
 %h1 Listing posts
 
+%button
+  New Post
+  = link_to '', new_post_path
+
 %table
   %tr
     %th Title
     %th Content
     %th Post img
     %th Embed url
-    %th
-    %th
-    %th
+    %th Username
+    %th Options
 
   - @posts.each do |post|
     %tr
@@ -17,10 +20,10 @@
       %td= post.post_img
       %td= post.embed_url.html_safe
       %td= link_to post.user.name, user_url(post.user_id)
-      %td= link_to 'Show', post
-      %td= link_to 'Edit', edit_post_path(post)
-      %td= link_to 'Destroy', post, :method => :delete, :data => { :confirm => 'Are you sure?' }
+      %td
+        = link_to 'Show', post
+        |
+        = link_to 'Edit', edit_post_path(post)
+        |
+        = link_to 'Destroy', post, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
-%br
-
-= link_to 'New Post', new_post_path
