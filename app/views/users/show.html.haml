@@ -2,6 +2,14 @@
 	= @user.name 
 	Posts
 
+%button
+	Follow
+	= link_to "", follow_path(@user), method: :get
+%button
+	Unfollow
+	= link_to "", follow_path(@user), method: :delete
+
+
 %table
 	%tr
 		%th Title
@@ -22,6 +30,10 @@
 
 - if current_user == @user
 	%h3 Following
+	%p
+		Following:
+		= current_user.follow_count
+		Users
 	%table
 		%tr
 			%th Title
@@ -38,10 +50,4 @@
 					%td= post.embed_url.html_safe
 					%br
 
-= link_to "Follow", follow_path(@user), method: :get
-= link_to "Unfollow", follow_path(@user), method: :delete
-
-%p
-	Following
-	= current_user.follow_count
 
