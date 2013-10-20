@@ -1,10 +1,6 @@
 MixExchange::Application.routes.draw do
   mount Commontator::Engine => '/commontator'
 
-
-  # put 'users/:id' => 'users#follow', as: 'follow'
-  # post 'users/:id' => 'users#unfollow', as: 'unfollow'
-
   resources :follows, only: [:show, :destroy]
 
   devise_for :users, :controllers => { :users => "users" }
