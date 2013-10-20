@@ -1,19 +1,22 @@
 source 'https://rubygems.org'
 
 # Haml
-
 gem 'haml-rails'
 gem 'haml'
 
+# Quality of Life
 gem 'pry'
 gem 'hirb'
 
+# Testing
 group :test do
   gem 'rspec-rails'
 end
 
+# Authentication
 gem 'devise'
 
+# Follow system
 gem 'acts_as_follower'
 
 # Rating system
