@@ -1,20 +1,18 @@
 %p#notice= notice
 
-%p
-  %b Title:
-  = @post.title
-%p
-  %b Content:
-  = @post.content
-%p
-  %b Post img:
-  = @post.post_img
-%p
-  %b Embed url:
-  = @post.embed_url
+%h1= @post.title
+%p= @post.content
+%p= image_tag @post.post_img
+%p= @post.embed_url.html_safe
+%p 
+	Author: 
+	= link_to @post.user.name, user_url(@post.user_id)
 
-= link_to 'Edit', edit_post_path(@post)
-\|
-= link_to 'Back', posts_path
+%p
+	= link_to 'Edit', edit_post_path(@post)
+	\|
+	= link_to 'Destroy', post_path(@post), :method => :delete, :data => { :confirm => 'Are you sure?' }
+	\|
+	= link_to 'Back', posts_path
 
 = commontator_thread(@post)

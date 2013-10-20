@@ -1,29 +1,11 @@
-%h1 Listing posts
+%h1 Mixtapes
 
-%button
-  New Post
-  = link_to '', new_post_path
+%h3= link_to 'New Post', new_post_path 
 
-%table
-  %tr
-    %th Title
-    %th Content
-    %th Post img
-    %th Embed url
-    %th Username
-    %th Options
-
-  - @posts.each do |post|
-    %tr
-      %td= post.title
-      %td= post.content
-      %td= post.post_img
-      %td= post.embed_url.html_safe
-      %td= link_to post.user.name, user_url(post.user_id)
-      %td
-        = link_to 'Show', post
-        |
-        = link_to 'Edit', edit_post_path(post)
-        |
-        = link_to 'Destroy', post, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
+- @posts.each do |post|
+  %div.small-6.large-4.columns.container
+    %td= link_to post.title, post
+    %br
+    %td= image_tag post.post_img
+    %br
+    %td= link_to post.user.name, user_url(post.user_id)

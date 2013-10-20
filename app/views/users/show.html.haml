@@ -2,21 +2,18 @@
 	= @user.name 
 	Posts
 
-%button
-	Follow
-	= link_to "", follow_path(@user), method: :get
-%button
-	Unfollow
-	= link_to "", follow_path(@user), method: :delete
-
+- if current_user.following?(@user)
+	%p You are following this user!
+= link_to "Follow", follow_path(@user), method: :get
+= link_to "Unfollow", follow_path(@user), method: :delete
 
 %table
 	%tr
+		%th User
 		%th Title
 		%th Content
 		%th Post img
 		%th Embed url
-		%th Username
 		- @user.posts.each do |post|
 			%tr
 				%td= link_to post.user.name, user_url(post.user_id)
@@ -36,11 +33,11 @@
 		Users
 	%table
 		%tr
+			%th User
 			%th Title
 			%th Content
 			%th Post img
 			%th Embed url
-			%th Username
 			- current_user.following_users.includes(:posts).collect{|u| u.posts}.flatten.each do |post|
 				%tr
 					%td= link_to post.user.name, user_url(post.user_id)
