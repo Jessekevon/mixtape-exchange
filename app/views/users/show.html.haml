@@ -1,8 +1,17 @@
 
 - current_user.following_users.includes(:posts).collect{|u| u.posts}.flatten.each do |post|
-  %tr
-    %td= post.title
-    %td= post.content
-    %td= post.post_img
-    %td= post.embed_url.html_safe
-    %br
+	%tr
+		%td= link_to post.user.name, user_url(post.user_id)
+		%td= post.title
+		%td= post.content
+		%td= post.post_img
+		%td= post.embed_url.html_safe
+		%br
+
+= link_to "Follow", follow_path(@user), method: :get
+= link_to "Unfollow", follow_path(@user), method: :delete
+
+%p
+	Following
+	= current_user.follow_count
+

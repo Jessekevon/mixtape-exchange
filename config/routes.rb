@@ -1,11 +1,16 @@
 MixExchange::Application.routes.draw do
   mount Commontator::Engine => '/commontator'
 
-  devise_for :users
+
+  # put 'users/:id' => 'users#follow', as: 'follow'
+  # post 'users/:id' => 'users#unfollow', as: 'unfollow'
+
+  resources :follows, only: [:show, :destroy]
+
+  devise_for :users, :controllers => { :users => "users" }
   resources :posts
 
   get 'users/:id' => 'users#show', as: 'user'
-
 
 
   # The priority is based upon order of creation: first created -> highest priority.

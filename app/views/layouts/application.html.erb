@@ -13,6 +13,7 @@
     Signed in as <%= current_user.name %>. Not you?
     <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
     <%= link_to "Profile", current_user %>
+    <%= link_to "Home", posts_path %>
   <% else %>
     <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
   <% end %>
