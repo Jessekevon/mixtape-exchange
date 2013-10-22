@@ -29,6 +29,9 @@ gem 'thumbs_up'
 # Comments
 gem 'commontator'
 
+# Image Uploading
+gem 'carrierwave'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 

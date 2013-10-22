@@ -6,7 +6,8 @@
   %div.small-6.large-4.columns.container
     %td= link_to post.title, post
     %br
-    %td= image_tag post.post_img
+    - if post.post_img?
+      %td= image_tag post.post_img
     %br
     %td= link_to post.user.name, user_url(post.user_id)
     %br
