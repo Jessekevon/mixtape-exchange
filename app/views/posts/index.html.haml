@@ -2,20 +2,22 @@
 
 %h3= link_to 'New Post', new_post_path 
 
-- @posts.each do |post|
-  %div.small-6.large-4.columns.container
-    %td= link_to post.title, post
-    %br
-    - if post.post_img?
-      %td= image_tag post.post_img_url
-    - else
-      %td= image_tag 'http://placehold.it/500x500'
-
-    %br
-    %td= link_to post.user.name, user_url(post.user_id)
-    %br
-    %td 
-      Total Votes:
-      = post.votes.count
-    %br
-    %td= link_to "Thumbs Up", vote_path(post), method: :get
+%div.row
+  - @posts.each do |post|
+    %div.small-12.large-4.columns.container
+      - if post.post_img?
+        %td= image_tag post.post_img_url
+      - else
+        %td= image_tag 'http://placehold.it/500x500'
+      %div.inside-container
+        %td
+          Title:
+          = link_to post.title, post
+        %br
+        %td
+          Author:
+          = link_to post.user.name, user_url(post.user_id)
+        %br
+        %p.votes
+          = post.votes.count
+          = link_to image_tag('up_arrow.png', :size => '50x50'), vote_path(post), method: :get

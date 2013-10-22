@@ -12,6 +12,18 @@ p {
 	text-align: center;
 }
 .container {
-	text-align: center;
+/*	float: left;*/
 	margin-bottom: 1em;
+	max-width: 500px;
+}
+.votes {
+	font-size: 1.5em;
+	text-align: center;
+	margin: 0px;
+}
+.inside-container {
+	margin-top: 1em;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #E0E0E0;
 }
