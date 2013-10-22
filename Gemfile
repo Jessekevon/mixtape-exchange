@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# Seeds
+gem 'seed_dump'
 
 # Foundation
 gem 'zurb-foundation'

@@ -7,7 +7,10 @@
     %td= link_to post.title, post
     %br
     - if post.post_img?
-      %td= image_tag post.post_img_url(:thumb)
+      %td= image_tag post.post_img_url
+    - else
+      %td= image_tag 'http://placehold.it/500x500'
+
     %br
     %td= link_to post.user.name, user_url(post.user_id)
     %br
