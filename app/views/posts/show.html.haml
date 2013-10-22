@@ -3,7 +3,7 @@
 %h1= @post.title
 %p= @post.content
 %p= image_tag @post.post_img
-%p= @post.embed_url.html_safe
+%p= @post.embed_url
 %p 
 	Author: 
 	= link_to @post.user.name, user_url(@post.user_id)
