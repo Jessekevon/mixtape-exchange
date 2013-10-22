@@ -1,4 +1,4 @@
-%h1 Mixtapes
+%h1 Top Mixtapes
 
 %h3= link_to 'New Post', new_post_path 
 
@@ -9,3 +9,9 @@
     %td= image_tag post.post_img
     %br
     %td= link_to post.user.name, user_url(post.user_id)
+    %br
+    %td 
+      Total Votes:
+      = post.votes.count
+    %br
+    %td= link_to "Thumbs Up", vote_path(post), method: :get

@@ -24,6 +24,9 @@ gem 'devise'
 gem 'acts_as_follower'
 
 # Rating system
+gem 'thumbs_up'
+
+# Comments
 gem 'commontator'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

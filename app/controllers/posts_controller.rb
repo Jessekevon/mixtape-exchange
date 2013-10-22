@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all.sort_by {|m| m.created_at }.reverse
+    @posts = Post.plusminus_tally.limit(15).where("posts.created_at >= '#{Time.now-2.days}'").order('plusminus_tally DESC')
   end
 
   # GET /posts/1

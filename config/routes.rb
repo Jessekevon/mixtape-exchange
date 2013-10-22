@@ -1,6 +1,8 @@
 MixExchange::Application.routes.draw do
   mount Commontator::Engine => '/commontator'
 
+  resources :votes, only: [:show]
+
   resources :follows, only: [:show, :destroy]
 
   devise_for :users, :controllers => { :users => "users" }
