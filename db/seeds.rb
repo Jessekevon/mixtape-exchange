@@ -9,3 +9,9 @@ Post.create!([
   { :title => "Dan's Indie Mix", :content => "1.\r\n2.\r\n3.\r\n4.\r\n5.", :post_img => "cover3.jpg", :embed_url => "", :created_at => "2013-10-22 20:17:51", :updated_at => "2013-10-22 20:17:51", :user_id => 2 },
   { :title => "The Maker Square", :content => "A playlist for the Maker Square classroom", :post_img => "cover4.jpg", :embed_url => "<iframe src=\"https://embed.spotify.com/?uri=spotify:user:hpatel13:playlist:7aIHKLWgy1kK2kVwLeZBzE\" width=\"250\" height=\"80\" frameborder=\"0\" allowtransparency=\"true\"></iframe>", :created_at => "2013-10-22 20:20:52", :updated_at => "2013-10-22 20:20:52", :user_id => 3 }
 ])
+
+User.create!([
+  { :email => "amcugs@gmail.com",  :name => "Andrew Cummings", :password => "password", :password_confirmation => "password"},
+
+  { :email => "jessekevon@gmail.com",  :name => "Jesse Kevon", :password => "password", :password_confirmation => "password"},
+])

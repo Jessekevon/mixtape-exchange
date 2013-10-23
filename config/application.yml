@@ -10,3 +10,5 @@ AS3_ACCESS_KEY: "AKIAII333HO5LZPI5R4Q"
 AS3_SECRET_ACCESS_KEY: "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"
 AS3_BUCKET_NAME: "bucketpower"
 
+EMAIL_ACCOUNT: "thermixtape@gmail.com"
+EMAIL_PASSWORD: "thesilverbullet"
