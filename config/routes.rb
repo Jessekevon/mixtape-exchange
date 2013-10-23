@@ -5,7 +5,7 @@ MixExchange::Application.routes.draw do
 
   resources :follows, only: [:show, :destroy]
 
-  devise_for :users, :controllers => { :users => "users" }
+  devise_for :users, :controllers => { :users => "users", :registrations => "registrations" }
   resources :posts
 
   get 'users/:id' => 'users#show', as: 'user'

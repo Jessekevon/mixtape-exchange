@@ -13,9 +13,9 @@ Post.create!([
 
 
 User.create!([
-  { :email => "amcugs@gmail.com", :encrypted_password => "$2a$10$K.DoPB2g9oQvgKNEtqaApuxeBCgCx4c9akXhUuCSE8CZmzOHUZL8C", :reset_password_token => nil, :reset_password_sent_at => nil, :remember_created_at => nil, :sign_in_count => 1, :current_sign_in_at => "2013-10-22 19:38:19", :last_sign_in_at => "2013-10-22 19:38:19", :current_sign_in_ip => "127.0.0.1", :last_sign_in_ip => "127.0.0.1", :created_at => "2013-10-22 19:38:19", :updated_at => "2013-10-22 19:38:19", :name => "Andrew Cummings", :profile_pic => nil },
-  { :email => "xx@xx.com", :encrypted_password => "$2a$10$I3i4i9jUtMPEz9n7sc9ClelVvQJDH7kYWVoweZOHogmf7jIjYnFS6", :reset_password_token => nil, :reset_password_sent_at => nil, :remember_created_at => nil, :sign_in_count => 1, :current_sign_in_at => "2013-10-22 20:13:47", :last_sign_in_at => "2013-10-22 20:13:47", :current_sign_in_ip => "127.0.0.1", :last_sign_in_ip => "127.0.0.1", :created_at => "2013-10-22 20:13:47", :updated_at => "2013-10-22 20:13:47", :name => "Roscoe Billings", :profile_pic => nil },
-  { :email => "jessekevon@gmail.com", :encrypted_password => "$2a$10$L/zrBrLdWqeEGm8/mpfsn.vLzFOYoLXu8mOrBvAI3LdigIWTWHWge", :reset_password_token => nil, :reset_password_sent_at => nil, :remember_created_at => nil, :sign_in_count => 1, :current_sign_in_at => "2013-10-22 20:19:44", :last_sign_in_at => "2013-10-22 20:19:44", :current_sign_in_ip => "127.0.0.1", :last_sign_in_ip => "127.0.0.1", :created_at => "2013-10-22 20:19:44", :updated_at => "2013-10-22 20:19:44", :name => "Jesse Kevon", :profile_pic => nil }
-])
+  { :email => "amcugs@gmail.com",  :name => "Andrew Cummings", :password => "password", :password_confirmation => "password"},
+
+  { :email => "jessekevon@gmail.com",  :name => "Jesse Kevon", :password => "password", :password_confirmation => "password"},
+  ])
 
 
