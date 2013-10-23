@@ -1,7 +1,6 @@
 class UserMailer < ActionMailer::Base
   default from: "from@example.com"
 
-  # Defines
   def welcome_email(user)
     @user = user
     @url = 'http://blah.com/login'
