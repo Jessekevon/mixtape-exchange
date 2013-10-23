@@ -4,7 +4,15 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.plusminus_tally.limit(15).where("posts.created_at >= '#{Time.now-2.days}'").order('plusminus_tally DESC')
+    if params[:sort] == 'top'
+      @posts = Post.plusminus_tally.limit(15).order('plusminus_tally DESC')
+    elsif params[:sort] == 'new'
+      @posts = Post.plusminus_tally.limit(15).order('created_at DESC')
+    elsif params[:sort] == 'hot'
+      @posts = Post.plusminus_tally.limit(15).where("posts.created_at >= '#{Time.now-2.days}'").order('plusminus_tally DESC')
+    else
+      @posts = Post.plusminus_tally.limit(15).where("posts.created_at >= '#{Time.now-2.days}'").order('plusminus_tally DESC')
+    end
   end
 
   # GET /posts/1
