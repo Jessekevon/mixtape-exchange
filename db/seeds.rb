@@ -5,9 +5,9 @@
 Post.create!([
   { :title => "Fall 2013 Mixtape", :content => "1. Song Name\r\n2. Song Name\r\n3. Song Name\r\n4. Song Name\r\n5. Song Name\r\n", :post_img => nil, :embed_url => "<iframe src=\"https://embed.spotify.com/?uri=spotify:user:hpatel13:playlist:7aIHKLWgy1kK2kVwLeZBzE\" width=\"250\" height=\"80\" frameborder=\"0\" allowtransparency=\"true\"></iframe>", :created_at => "2013-10-22 20:10:35", :updated_at => "2013-10-22 20:10:35", :user_id => 1 },
   { :title => "These Shaky Isles", :content => "1. Song Name\r\n2. Song Name\r\n3. Song Name\r\n4. Song Name\r\n5. Song Name", :post_img => "cover1.jpg", :embed_url => "", :created_at => "2013-10-22 20:11:46", :updated_at => "2013-10-22 20:11:46", :user_id => 1 },
-  { :title => "Mixtape:Spring:2013", :content => "1. Song Name\r\n2. Song Name\r\n3. Song Name\r\n4. Song Name\r\n5. Song Name", :post_img => "cover2.jpg", :embed_url => "", :created_at => "2013-10-22 20:14:53", :updated_at => "2013-10-22 20:14:53", :user_id => 2 },
-  { :title => "Dan's Indie Mix", :content => "1.\r\n2.\r\n3.\r\n4.\r\n5.", :post_img => "cover3.jpg", :embed_url => "", :created_at => "2013-10-22 20:17:51", :updated_at => "2013-10-22 20:17:51", :user_id => 2 },
-  { :title => "The Maker Square", :content => "A playlist for the Maker Square classroom", :post_img => "cover4.jpg", :embed_url => "<iframe src=\"https://embed.spotify.com/?uri=spotify:user:hpatel13:playlist:7aIHKLWgy1kK2kVwLeZBzE\" width=\"250\" height=\"80\" frameborder=\"0\" allowtransparency=\"true\"></iframe>", :created_at => "2013-10-22 20:20:52", :updated_at => "2013-10-22 20:20:52", :user_id => 3 }
+  { :title => "Mixtape:Spring:2013", :content => "1. Song Name\r\n2. Song Name\r\n3. Song Name\r\n4. Song Name\r\n5. Song Name", :post_img => "cover2.jpg", :embed_url => "", :created_at => "2013-10-22 20:14:53", :updated_at => "2013-10-22 20:14:53", :user_id => 1 },
+  { :title => "Dan's Indie Mix", :content => "1.\r\n2.\r\n3.\r\n4.\r\n5.", :post_img => "cover3.jpg", :embed_url => "", :created_at => "2013-10-22 20:17:51", :updated_at => "2013-10-22 20:17:51", :user_id => 1 },
+  { :title => "The Maker Square", :content => "A playlist for the Maker Square classroom", :post_img => "cover4.jpg", :embed_url => "<iframe src=\"https://embed.spotify.com/?uri=spotify:user:hpatel13:playlist:7aIHKLWgy1kK2kVwLeZBzE\" width=\"250\" height=\"80\" frameborder=\"0\" allowtransparency=\"true\"></iframe>", :created_at => "2013-10-22 20:20:52", :updated_at => "2013-10-22 20:20:52", :user_id => 1 }
 ])
 
 User.create!([

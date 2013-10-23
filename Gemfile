@@ -2,10 +2,10 @@ source 'https://rubygems.org'
 
 
 # Stack Trace
-group :development do
-  gem "better_errors"
-end
-gem "binding_of_caller"
+# group :development do
+#   gem "better_errors"
+# end
+# gem "binding_of_caller"
 
 
 # Seeds
