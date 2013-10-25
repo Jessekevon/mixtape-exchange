@@ -1,9 +1,23 @@
-<h2>Sign in</h2>
+<h1>MIXTAPE : EXCHANGE</h1>
+<hr>
+<p>Welcome to mixtape exchange.<br>The best Music app ever.</p>
 
-<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, :autofocus => true %></div>
+<div class="row">
+  <div class="small-3 small-centered columns">
+    <h2>Sign in</h2>
+  </div>
+</div>
 
+<div class="row">
+  <div class="small-3 small-centered columns">
+  <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+    <div><%= f.label :email %><br />
+    <%= f.email_field :email, :autofocus => true %></div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-3 small-centered columns">
   <div><%= f.label :password %><br />
   <%= f.password_field :password %></div>
 
