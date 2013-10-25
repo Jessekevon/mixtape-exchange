@@ -4,11 +4,11 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    if params[:sort] == 'top'
+    if params[:sort] == 'Top'
       @posts = Post.plusminus_tally.limit(15).order('plusminus_tally DESC')
-    elsif params[:sort] == 'new'
+    elsif params[:sort] == 'New'
       @posts = Post.plusminus_tally.limit(15).order('created_at DESC')
-    elsif params[:sort] == 'hot'
+    elsif params[:sort] == 'Hot'
       @posts = Post.plusminus_tally.limit(15).where("posts.created_at >= '#{Time.now-2.days}'").order('plusminus_tally DESC')
     else
       @posts = Post.plusminus_tally.limit(15).where("posts.created_at >= '#{Time.now-2.days}'").order('plusminus_tally DESC')
@@ -34,6 +34,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     @post.user = current_user
+    @post.post_img = "covers/cover1"
 
     respond_to do |format|
       if @post.save
@@ -78,6 +79,6 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:title, :content, :post_img, :embed_url)
+      params.require(:post).permit(:title, :content, :post_img, :embed_url, :tag_list)
     end
 end

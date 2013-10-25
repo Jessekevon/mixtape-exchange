@@ -26,12 +26,7 @@ class ImageUploader < CarrierWave::Uploader::Base
 
   version :thumb do
       # this is one interpretation of what a 'thumb' is, yours may be different
-    process :resize_to_fit => [75,75] # this means 75 x 75
-  end
-
-  version :medium do
-      # this is one interpretation of what 'medium' is, yours may be different
-    process :resize_to_limit => [500,500] # this means 800 x 800
+    process :resize_to_fit => [100,100] # this means 75 x 75
   end
 
   # Process files as they are uploaded:

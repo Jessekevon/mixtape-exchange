@@ -8,6 +8,9 @@ source 'https://rubygems.org'
 # gem "binding_of_caller"
 
 
+# Tag System
+gem 'acts-as-taggable-on'
+
 # Seeds
 gem 'seed_dump'
 

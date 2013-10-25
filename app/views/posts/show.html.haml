@@ -15,4 +15,10 @@
 	\|
 	= link_to 'Back', posts_path
 
+%p
+	- @post.tag_list.each do |x|
+		= x
+
 = commontator_thread(@post)
+
+
