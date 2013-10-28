@@ -9,19 +9,21 @@
   .row-container
     .row
       .small-3.small-centered.columns
-      = f.text_field :title, :placeholder => "Title" 
+        = f.text_field :title, :placeholder => "Title" 
     .row
       .small-3.small-centered.columns
-      = f.text_area :content, :placeholder => "Content"
+        = f.text_area :content, :placeholder => "Content"
     .row
       .small-3.small-centered.columns
-      = f.label :post_img
-      = f.file_field :post_img, :value => 'covers/cover1.jpeg'
+        = f.text_field :embed_url, :placeholder => "Embed url"
     .row
       .small-3.small-centered.columns
-      = f.text_field :embed_url, :placeholder => "Embed url"
+        = f.text_field :tag_list, { :placeholder => "Tags separated by commas" }
     .row
       .small-3.small-centered.columns
-      = f.text_field :tag_list, { :placeholder => "Tags separated by commas" }
+        = f.label :post_img
+        = f.file_field :post_img, :value => 'covers/cover1.jpeg'
+
     .actions
       = f.submit 'Save'
+
