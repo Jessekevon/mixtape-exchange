@@ -6,16 +6,22 @@
         - @post.errors.full_messages.each do |msg|
           %li= msg
 
-  .field
-    = f.text_field :title, :placeholder => "Title" 
-  .field
-    = f.text_area :content, :placeholder => "Content"
-  .field
-    = f.label :post_img
-    = f.file_field :post_img, :value => 'covers/cover1.jpeg'
-  .field
-    = f.text_field :embed_url, :placeholder => "Embed url"
-  .field
-    = f.text_field :tag_list, { :placeholder => "Tags separated by commas" }
-  .actions
-    = f.submit 'Save'
+  .row-container
+    .row
+      .small-3.small-centered.columns
+      = f.text_field :title, :placeholder => "Title" 
+    .row
+      .small-3.small-centered.columns
+      = f.text_area :content, :placeholder => "Content"
+    .row
+      .small-3.small-centered.columns
+      = f.label :post_img
+      = f.file_field :post_img, :value => 'covers/cover1.jpeg'
+    .row
+      .small-3.small-centered.columns
+      = f.text_field :embed_url, :placeholder => "Embed url"
+    .row
+      .small-3.small-centered.columns
+      = f.text_field :tag_list, { :placeholder => "Tags separated by commas" }
+    .actions
+      = f.submit 'Save'
