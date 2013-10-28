@@ -14,9 +14,12 @@
     = f.text_area :content
   .field
     = f.label :post_img
-    = f.file_field :post_img
+    = f.file_field :post_img, :value => 'covers/cover1.jpeg'
   .field
     = f.label :embed_url
     = f.text_field :embed_url
+  .field
+    = f.label :tag_list
+    = f.text_field :tag_list, { :placeholder => "Tags separated by commas" }
   .actions
     = f.submit 'Save'

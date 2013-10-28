@@ -2,28 +2,54 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-h1 {
-	text-align: center;
+@font-face {
+    font-family: 'Raleway Thin';
+    src: url(font-path('Raleway Thin.otf'));
 }
-h3 {
+body {
+	background-color: #FFF;
+}
+h1 {
+	font-family: 'Raleway Thin';
+	color: black;
 	text-align: center;
 }
 p {
+	text-align: left;
+}
+.center {
 	text-align: center;
 }
 .container {
-/*	float: left;*/
 	margin-bottom: 1em;
 	max-width: 500px;
+	font-family: verdana;
 }
-.votes {
-	font-size: 1.5em;
-	text-align: center;
-	margin: 0px;
+.title {
+	font-size: 16px;
+	margin-left: 10px;
+	text-align: left;
+}
+.author {
+	font-size: 12px;
+	margin-top: 2px;
+	margin-left: 10px;
+	text-align: left;
+}
+.count {
+	position: absolute;
+	top: 15px;
+	right: 40px;
+}
+.upvote {
+	position: absolute;
+	top: 8px;
+	right: 8px;
 }
 .inside-container {
+	position: relative;
 	margin-top: 1em;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	background-color: #E0E0E0;
+	background-color: #DDDEE0;
 }

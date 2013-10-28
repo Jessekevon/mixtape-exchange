@@ -1,34 +1,33 @@
-%h1 Top Mixtapes
+%h1
+  = params[:sort]
+  Mixtapes
 
-%h3= link_to 'New Post', new_post_path 
-
-%a.tiny.button.dropdown{"data-dropdown" => "drop1", :href => "#"} Sort
+%div.center
+  %a.small.button.dropdown{"data-dropdown" => "drop1", :href => "#"} Sort
 
 %br
   %ul#drop1.f-dropdown
     %li
-      %a= link_to 'Top', posts_path(:sort => 'top')
+      %a= link_to 'Top', posts_path(:sort => 'Top')
     %li
-      %a= link_to 'New', posts_path(:sort => 'new')
+      %a= link_to 'New', posts_path(:sort => 'New')
     %li
-      %a= link_to 'Hot', posts_path(:sort => 'hot')
+      %a= link_to 'Hot', posts_path(:sort => 'Hot')
 
 %div.row
   - @posts.each do |post|
     %div.small-12.large-4.columns.container
       - if post.post_img?
-        %td= image_tag post.post_img_url
+        %div.image= image_tag post.post_img_url
       - else
-        %td= image_tag 'http://placehold.it/500x500'
+        %div.image= image_tag 'http://placehold.it/500x500'
       %div.inside-container
-        %td
-          Title:
+        %div.title
           = link_to post.title, post
-        %br
-        %td
-          Author:
+        %div.author
+          by,
           = link_to post.user.name, user_url(post.user_id)
-        %br
-        %p.votes
+        %div.count
           = post.votes.count
-          = link_to image_tag('up_arrow.png', :size => '50x50'), vote_path(post), method: :get
+        %div.upvote
+          = link_to image_tag('up_arrow.png', :size => '30x30'), vote_path(post), method: :get
