@@ -6,6 +6,10 @@
     font-family: 'Raleway Thin';
     src: url(font-path('Raleway Thin.otf'));
 }
+@font-face {
+    font-family: 'Raleway Light';
+    src: url(font-path('Raleway Light.otf'));
+}
 body {
 	font-family: 'Raleway Thin';
 	background-color: #1e2325;
@@ -17,7 +21,14 @@ h1 {
 	color: white;
 	text-align: center;
 }
+h3 {
+	font-family: 'Raleway Thin';
+	color: white;
+	text-align: center;	
+}
 p {
+	font-family: 'Raleway Thin';
+	color: white;
 	text-align: left;
 }
 .center {
@@ -41,12 +52,12 @@ p {
 }
 .count {
 	position: absolute;
-	top: 15px;
+	top: 12px;
 	right: 40px;
 }
 .upvote {
 	position: absolute;
-	top: 8px;
+	top: 5px;
 	right: 8px;
 }
 .inside-container {
