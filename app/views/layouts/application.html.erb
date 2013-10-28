@@ -45,7 +45,9 @@
     </ul>
     <ul class="right">
       <li class="divider"></li>
-      <li class="active"><a href="#"><%= link_to current_user.name, current_user %></a></li>
+      <% if user_signed_in? %>
+        <li class="active"><a href="#"><%= link_to current_user.name, current_user %></a></li>
+      <% end %>
       <li class="divider"></li>
       <li class="active"><a href="#"><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></a></li>
     </ul>
