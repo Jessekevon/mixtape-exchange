@@ -8,6 +8,11 @@
     src: url(font-path('Bitter-Bold.otf'));
 }
 
+@font-face {
+    font-family: 'Bitter';
+    src: url(font-path('Bitter-Bold.otf'));
+}
+
 /*Styling the UL, it will be fixed positioned and stretch over the viewport.*/
 /*Using an :after pseudo element to place a pattern on top of the image.*/
 /*The z-index property in CSS controls the vertical stacking order of elements that overlap. 
@@ -73,7 +78,7 @@
   font-size: 100px;
   color: white;
   padding: 0;
-  line-height: 150px; 
+  line-height: 100px; 
 }
 
 /*Defines the background images for all spans & animation delay.*/
@@ -99,7 +104,7 @@
   animation-delay: 12s; 
 }
 .slider li:nth-child(4) span { 
-  background-image: url(carpet.jpg);
+  background-image: url(carpetbw.jpg);
   -webkit-animation-delay: 18s;
   -moz-animation-delay: 18s;
   -o-animation-delay: 18s;
@@ -259,7 +264,7 @@ color: white;
 
 h2 {
 	font-family: 'Raleway Thin';
-	color: white;
+	color: #b53656;
 }
 
 h4 {
@@ -279,7 +284,6 @@ p {
 }
 
 .circle {
-	margin-top: 570px;
 /*	width: 500px;
 	height: 500px;
 	-moz-border-radius: 50%; 
@@ -287,4 +291,5 @@ p {
 	border-radius: 50%;
 	background: #4679BD;
 */}
+
 
