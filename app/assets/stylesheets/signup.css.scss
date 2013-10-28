@@ -9,9 +9,15 @@
 }
 
 @font-face {
-    font-family: 'Bitter';
-    src: url(font-path('Bitter-Bold.otf'));
+    font-family: 'GearedSlab';
+    src: url(font-path('GearedSlab-Bold.otf'));
 }
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url(font-path('BebasNeue.otf'));
+}
+
 
 /*Styling the UL, it will be fixed positioned and stretch over the viewport.*/
 /*Using an :after pseudo element to place a pattern on top of the image.*/
