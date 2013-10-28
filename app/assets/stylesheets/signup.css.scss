@@ -1,28 +1,28 @@
 @font-face {
-    font-family: 'Raleway Thin';
-    src: url(font-path('Raleway Thin.otf'));
+  font-family: 'Raleway Thin';
+  src: url(font-path('Raleway Thin.otf'));
 }
 
 @font-face {
-    font-family: 'Bitter';
-    src: url(font-path('Bitter-Bold.otf'));
+  font-family: 'Raleway-Light';
+  src: url(font-path('Raleway-Light.otf'));
+}
+
+
+@font-face {
+  font-family: 'Bitter';
+  src: url(font-path('Bitter-Bold.otf'));
 }
 
 @font-face {
-    font-family: 'GearedSlab';
-    src: url(font-path('GearedSlab-Bold.otf'));
+  font-family: 'GearedSlab';
+  src: url(font-path('GearedSlab-Bold.otf'));
 }
 
 @font-face {
-    font-family: 'BebasNeue';
-    src: url(font-path('BebasNeue.otf'));
+  font-family: 'Bigmouth';
+  src: url(font-path('Bigmouth.otf'));
 }
-
-@font-face {
-    font-family: 'Bigmouth';
-    src: url(font-path('Bigmouth.otf'));
-}
-
 
 /*Styling the UL, it will be fixed positioned and stretch over the viewport.*/
 /*Using an :after pseudo element to place a pattern on top of the image.*/
