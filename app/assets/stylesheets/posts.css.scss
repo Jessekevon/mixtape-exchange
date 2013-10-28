@@ -7,11 +7,14 @@
     src: url(font-path('Raleway Thin.otf'));
 }
 body {
-	background-color: #FFF;
+	font-family: 'Raleway Thin';
+	background-color: #1e2325;
+	background: transparent url(pattern.png) repeat top left; 
+	background-color: #333738;
 }
 h1 {
 	font-family: 'Raleway Thin';
-	color: black;
+	color: white;
 	text-align: center;
 }
 p {
