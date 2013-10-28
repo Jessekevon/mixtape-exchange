@@ -18,6 +18,11 @@
     src: url(font-path('BebasNeue.otf'));
 }
 
+@font-face {
+    font-family: 'Bigmouth';
+    src: url(font-path('Bigmouth.otf'));
+}
+
 
 /*Styling the UL, it will be fixed positioned and stretch over the viewport.*/
 /*Using an :after pseudo element to place a pattern on top of the image.*/
@@ -80,11 +85,11 @@
 /*The title div animation will also take a total of 36 seconds to cycle trhough*/
 
 .slider li div h3 { 
-  font-family: 'Bitter-Bold', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'GearedSlab-Bold', 'Arial Narrow', Arial, sans-serif;
   font-size: 100px;
   color: white;
   padding: 0;
-  line-height: 100px; 
+  line-height: 80px; 
 }
 
 /*Defines the background images for all spans & animation delay.*/
@@ -289,13 +294,9 @@ p {
 	color: white;
 }
 
-.circle {
-/*	width: 500px;
-	height: 500px;
-	-moz-border-radius: 50%; 
-	-webkit-border-radius: 50%; 
-	border-radius: 50%;
-	background: #4679BD;
-*/}
+.row-container {
+	margin-top: 60px;
+}
+
 
 
