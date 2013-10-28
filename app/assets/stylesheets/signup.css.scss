@@ -96,10 +96,10 @@
 /*Each following slideshow image and title appear 6 seconds after the previous image.*/
 
 .slider li:nth-child(1) span { 
-  background-image: url(baroness.jpg) 
+  background-image: url(1.jpg) 
 }
 .slider li:nth-child(2) span { 
-  background-image: url(tapes.JPG);
+  background-image: url(tapesbw1.jpg);
   -webkit-animation-delay: 6s;
   -moz-animation-delay: 6s;
   -o-animation-delay: 6s;
@@ -295,7 +295,7 @@ p {
 }
 
 .row-container {
-	margin-top: 60px;
+	margin-top: 70px;
 }
 
 
