@@ -2,17 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@font-face {
+    font-family: 'Raleway Thin';
+    src: url(font-path('Raleway Thin.otf'));
+}
 body {
-	background-image: url('debut_light.png');	
+	background-color: #FFF;
 }
 h1 {
-	text-align: center;
-}
-h3 {
+	font-family: 'Raleway Thin';
+	color: black;
 	text-align: center;
 }
 p {
 	text-align: left;
+}
+.center {
+	text-align: center;
 }
 .container {
 	margin-bottom: 1em;
