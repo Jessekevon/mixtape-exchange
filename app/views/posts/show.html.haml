@@ -12,19 +12,15 @@
 		\|
 		= link_to 'Back', posts_path
 %p.center
+	= raw @post.embed_url
+%p.center
 	Tags:
 	- @post.tag_list.each do |x|
 		= x
 %div.row
 	%p.columns.large-6= image_tag @post.post_img
 	%p.columns.large-6= @post.content
-%p= raw @post.embed_url
-
-
-
-
-
-
+		
 = commontator_thread(@post)
 
 

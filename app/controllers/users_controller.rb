@@ -4,6 +4,9 @@ class UsersController < ApplicationController
   def show
   end
 
+  def feed
+  end
+
   private
 
   # Use callbacks to share common setup or constraints between actions.

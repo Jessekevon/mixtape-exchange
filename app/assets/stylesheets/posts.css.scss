@@ -21,6 +21,11 @@ h1 {
 	color: white;
 	text-align: center;
 }
+h2 {
+	font-family: 'Raleway Thin';
+	color: white;
+	text-align: center;
+}
 h3 {
 	font-family: 'Raleway Thin';
 	color: white;
@@ -73,4 +78,7 @@ p {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	background-color: rgba(255, 255, 255, 0.3)
+}
+form input[type="file"]{
+	text-align: center;
 }

@@ -9,6 +9,7 @@ MixExchange::Application.routes.draw do
   resources :posts
 
   get 'users/:id' => 'users#show', as: 'user'
+  get 'users/:id/feed' => 'users#feed', as: 'feed'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
