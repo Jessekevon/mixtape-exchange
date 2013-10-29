@@ -3,7 +3,7 @@
   Mixtapes
 
 %div.center
-  %a.small.button.dropdown{"data-dropdown" => "drop1", :href => "#"} Sort
+  %a.secondary.button.dropdown{"data-dropdown" => "drop1", :href => "#"} Sort
 
 %br
   %ul#drop1.f-dropdown
@@ -22,12 +22,12 @@
       - else
         %div.image= image_tag 'http://placehold.it/500x500'
       %div.inside-container
-        %div.title
+        %div.view.title
           = link_to post.title, post
-        %div.author
+        %div.view.author
           by,
           = link_to post.user.name, user_url(post.user_id)
-        %div.count
+        %div.view.count
           = post.votes.count
-        %div.upvote
+        %div.view.upvote
           = link_to image_tag('up_arrow.png', :size => '30x30'), vote_path(post), method: :get

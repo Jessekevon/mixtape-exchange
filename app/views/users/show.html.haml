@@ -3,12 +3,13 @@
 	Posts
 
 - if current_user.following?(@user)
-	%p You are following this user!
+	%p.center You are following this user!
 
 - if current_user == @user
 - else
-	= link_to "Follow", follow_path(@user), method: :get
-	= link_to "Unfollow", follow_path(@user), method: :delete
+	%p.center
+		= link_to "Follow", follow_path(@user), method: :get
+		= link_to "Unfollow", follow_path(@user), method: :delete
 
 %div.row
 	- @user.posts.each do |post|
@@ -35,19 +36,19 @@
 		= current_user.follow_count
 		Users
 	%div.row
-	- current_user.following_users.includes(:posts).collect{|u| u.posts}.flatten.each do |post|
-		%div.small-12.large-4.columns.container
-			- if post.post_img?
-				%div.image= image_tag post.post_img_url
-			- else
-				%div.image= image_tag 'http://placehold.it/500x500'
-			%div.inside-container
-				%div.title
-					= link_to post.title, post
-				%div.author
-					by,
-					= link_to post.user.name, user_url(post.user_id)
-				%div.count
-					= post.votes.count
-				%div.upvote
-					= link_to image_tag('up_arrow.png', :size => '30x30'), vote_path(post), method: :get
+		- current_user.following_users.includes(:posts).collect{|u| u.posts}.flatten.each do |post|
+			%div.small-12.large-4.columns.container
+				- if post.post_img?
+					%div.image= image_tag post.post_img_url
+				- else
+					%div.image= image_tag 'http://placehold.it/500x500'
+				%div.inside-container
+					%div.title
+						= link_to post.title, post
+					%div.author
+						by,
+						= link_to post.user.name, user_url(post.user_id)
+					%div.count
+						= post.votes.count
+					%div.upvote
+						= link_to image_tag('up_arrow.png', :size => '30x30'), vote_path(post), method: :get

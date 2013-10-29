@@ -26,38 +26,45 @@ h3 {
 	color: white;
 	text-align: center;	
 }
+.view {
+	font-family: 'Raleway Thin';
+	color: white;
+	text-align: left;
+}
 p {
 	font-family: 'Raleway Thin';
 	color: white;
 	text-align: left;
 }
+
 .center {
 	text-align: center;
 }
 .container {
 	margin-bottom: 1em;
 	max-width: 500px;
-	font-family: verdana;
 }
 .title {
-	font-size: 16px;
+	font-size: 1.1em;
 	margin-left: 10px;
+	margin-top: 5px;
 	text-align: left;
 }
 .author {
-	font-size: 12px;
-	margin-top: 2px;
+	font-size: 1em;
+	margin-top: 5px;
 	margin-left: 10px;
 	text-align: left;
 }
 .count {
+	font-size: 1.2em;
 	position: absolute;
-	top: 12px;
+	top: 20px;
 	right: 40px;
 }
 .upvote {
 	position: absolute;
-	top: 5px;
+	top: 13px;
 	right: 8px;
 }
 .inside-container {
@@ -65,5 +72,5 @@ p {
 	margin-top: 1em;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	background-color: #DDDEE0;
+	background-color: rgba(255, 255, 255, 0.3)
 }
