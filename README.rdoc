@@ -1,8 +1,11 @@
 == README
 
-•
-•
 
+• Create a music discovery / social networking app.
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+• Users can create and share playlists with friends. 
+
+• Users can follow their friends and filter through trending playlists.
+
+• Technology: a Ruby on Rails web application using Zurb Foundation and CSS3 techniques for responsive web design, open source Gem implementation using Devise for authentication and Carrierwave for file uploads. 
+
